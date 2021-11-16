@@ -111,7 +111,7 @@ exit();
         </div>
     </div><!--/.wrapper-->
 
-<!--    <div class="footer">
+ <div class="footer">
         <div class="container">
              
 
@@ -134,7 +134,7 @@ exit();
      <script src="//z-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1"></script>
     </div>
     </div>
-    </div> -->
+    </div>
     <script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
     <script src="scripts/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
     <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
