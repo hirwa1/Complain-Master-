@@ -6,8 +6,8 @@
 // define('DB_NAME', 'complaint');
 
 define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'Toussaint');
-define('DB_PASSWORD', 'digitaloceaN@00d');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
 define('DB_NAME', 'complaint');
 
 /* Attempt to connect to MySQL database */
