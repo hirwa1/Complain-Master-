@@ -60,8 +60,9 @@ $num1 = mysqli_num_rows($rt);
                       <i class="icon-inbox"></i>
                       Closed Complaints
        <?php 
-  $status="closed";                   
-$rt = mysqli_query($con,"SELECT * FROM tblcomplaints where status='$status'");
+  $status="closed";
+  $thth = $_SESSION['state'];                   
+$rt = mysqli_query($con,"SELECT * FROM tblcomplaints where status='$status' and tblcomplaints.state='$thth'");
 $num1 = mysqli_num_rows($rt);
 {?><b class="label green pull-right"><?php echo htmlentities($num1); ?></b>
 <?php } ?>
