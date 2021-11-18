@@ -4,7 +4,7 @@ error_reporting(0);
 include("includes/config.php");
 if(isset($_POST['submit']))
 {
-$ret=mysqli_query($con,"SELECT * FROM users WHERE userEmail='".$_POST['username']."' and password='".md5($_POST['password'])."'");
+$ret=mysqli_query($con,"SELECT * FROM users WHERE userEmail='".$_POST['username']."' and password='".$_POST['password']."'");
 $num=mysqli_fetch_array($ret);
 if($num>0)
 {
