@@ -109,12 +109,6 @@ $num1 = mysqli_num_rows($rt);
 
 
 
-<li class="sub-menu">
-                      <a href="state.php" >
-                          <i class="fa fa-tasks"></i>
-                          <span>Add State</span>
-                      </a>
-                    </li>
 
 
 
