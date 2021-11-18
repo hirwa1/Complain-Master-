@@ -109,8 +109,9 @@ exit();
 
                     
                 </div>
-                <h2><a href="users">Citizen</a></h2>
+            
             </div>
+            <h2><a href="users">Citizen</a> &nbsp; <a href="sub">Akagari</a></h2>
         </div>
     </div><!--/.wrapper-->
     <!-- -->
