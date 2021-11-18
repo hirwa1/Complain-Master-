@@ -82,7 +82,7 @@ exit();
                 <div class="module module-login span4 offset4">
                     <form class="form-vertical" method="post">
                         <div class="module-head">
-                            <h3>Sign In</h3>
+                            <h3>Sign In -  Umurenge</h3>
                         </div>
                         <span style="color:red;" ><?php echo htmlentities($_SESSION['errmsg']); ?><?php echo htmlentities($_SESSION['errmsg']="");?></span>
                         <div class="module-body">
@@ -106,7 +106,10 @@ exit();
                             </div>
                         </div>
                     </form>
+
+                    
                 </div>
+                <h2><a href="users">Citizen</a></h2>
             </div>
         </div>
     </div><!--/.wrapper-->
