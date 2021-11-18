@@ -63,7 +63,7 @@ $num1 = mysqli_num_rows($rt);
 						<ul class="widget widget-menu unstyled">
                                 <li><a href="category.php"><i class="menu-icon icon-tasks"></i> Add Category </a></li>
                                 <li><a href="subcategory.php"><i class="menu-icon icon-tasks"></i>Add Sub-Category </a></li>
-                                <li><a href="state.php"><i class="menu-icon icon-paste"></i>Add State</a></li>
+                              
                           
                         
                             </ul><!--/.widget-nav-->
