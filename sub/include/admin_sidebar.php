@@ -88,28 +88,6 @@ $num1 = mysqli_num_rows($rt);
 
 
 
-                  <li class="sub-menu">
-                      <a href="category.php" >
-                          <i class="fa fa-tasks"></i>
-                          <span>Add Category </span>
-                      </a>
-                    </li>
-
-
-
-
-              
-
-              <li class="sub-menu">
-                      <a href="subcategory.php" >
-                          <i class="fa fa-tasks"></i>
-                          <span>Add Sub-Category </span>
-                      </a>
-                    </li>
-
-
-
-
 
 
                   
