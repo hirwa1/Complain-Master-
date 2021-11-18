@@ -115,13 +115,6 @@ $num1 = mysqli_num_rows($rt);
                   
 
 
-              <li class="sub-menu">
-                      <a href="user-logs.php" >
-                          <i class="fa fa-tasks"></i>
-                          <span>User Login Log</span>
-                      </a>
-                      
-                  </li>
 
 
 
