@@ -97,7 +97,9 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 <tbody>
 <?php 
 $st='in process';
-$query=mysqli_query($con,"select tblcomplaints.*,users.fullName as name from tblcomplaints join users on users.id=tblcomplaints.userId where tblcomplaints.status='$st'");
+$thth = $_SESSION['state'];
+$query=mysqli_query($con,"select tblcomplaints.*,users.fullName as name from tblcomplaints join users on users.id=tblcomplaints.userId where tblcomplaints.status='$st' and tblcomplaints.status='
+ ");
 while($row=mysqli_fetch_array($query))
 {
 ?>										
@@ -117,7 +119,7 @@ while($row=mysqli_fetch_array($query))
 								</table>
 							</div>
 						</div>		
-						<?php  echo $_SESSION['sate']?>				
+						<?php  echo $thth;?>				
 
 						
 						
