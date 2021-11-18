@@ -28,8 +28,9 @@
                       <i class="icon-tasks"></i>
                       Unprocessed
                    <?php 
-  $status=NULL;                   
-$rt = mysqli_query($con,"SELECT * FROM tblcomplaints where status is null");
+  $status=NULL; 
+  $thth = $_SESSION['state'];                  
+$rt = mysqli_query($con,"SELECT * FROM tblcomplaints where status is null and tblcomplaints.state='$thth'");
 $num1 = mysqli_num_rows($rt);
 {?><b class="label orange pull-right"><?php echo htmlentities($num1); ?></b>
 <?php } ?>
@@ -42,8 +43,9 @@ $num1 = mysqli_num_rows($rt);
                       <i class="icon-tasks"></i>
                       Pending Complaint
                    <?php 
-  $status="in Process";                   
-$rt = mysqli_query($con,"SELECT * FROM tblcomplaints where status='$status'");
+  $status="in Process";    
+  $thth = $_SESSION['state'];                
+$rt = mysqli_query($con,"SELECT * FROM tblcomplaints where status='$status' and tblcomplaints.state='$thth'");
 $num1 = mysqli_num_rows($rt);
 {?><b class="label orange pull-right"><?php echo htmlentities($num1); ?></b>
 <?php } ?>
