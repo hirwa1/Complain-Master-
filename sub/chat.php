@@ -102,7 +102,7 @@ while($row=mysqli_fetch_array($query))
 											<td><?php echo htmlentities($row['email']);?></td>
 
 <td>
-<a href="chat2.php?uid=<?php echo htmlentities($row['id']);?>">
+<a href="chats.php?uid=<?php echo htmlentities($row['id']);?>">
 <button type="button" class="btn btn-success">Message</button></a>
 
 										</td>
@@ -144,7 +144,7 @@ while($row=mysqli_fetch_array($query))
 											<td><?php echo htmlentities($row['name']);?></td>
 
 <td>
-<a href="chat2.php?uid=<?php echo htmlentities($row['id']);?>">
+<a href="chats.php?uid=<?php echo htmlentities($row['id']);?>">
 <button type="button" class="btn btn-success">Message</button></a>
 
 										</td>
