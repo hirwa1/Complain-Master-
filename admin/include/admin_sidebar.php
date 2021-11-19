@@ -53,7 +53,7 @@ $num1 = mysqli_num_rows($rt);
 
 
 
-<li>
+                  <li>
                     <a href="closed-complaint.php">
                       <i class="icon-inbox"></i>
                       Closed Complaints
@@ -76,6 +76,12 @@ $num1 = mysqli_num_rows($rt);
                         
                       </ul>
                   </li>
+                  <li class="sub-menu">
+                      <a href="chats.php" >
+                          <i class="fa fa-tasks"></i>
+                          <span>Chats </span>
+                      </a>
+                    </li>
 
 
 
@@ -106,7 +112,7 @@ $num1 = mysqli_num_rows($rt);
                           <span>Add Sub-Category </span>
                       </a>
                     </li>
-
+                   
 
 
 <li class="sub-menu">
