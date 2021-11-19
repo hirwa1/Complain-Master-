@@ -93,7 +93,8 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
  <?php
  
   $userid=$_GET['uid'];
-  $query=mysqli_query($con,"select * from chat where sender=''");
+  $admin = $_SESSION['id'];
+  $query=mysqli_query($con,"select * from chat where sender='$admin' ");
 while($row=mysqli_fetch_array($query))
 {
 ?>									
