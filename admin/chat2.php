@@ -105,7 +105,7 @@ while($row=mysqli_fetch_array($query))
                                             else{
                                                 ?>
                                              <p style="   padding:10px;"> 
-                                              <span > <?php echo htmlentities($row['msg']);?> &nbsp;
+                                              <span style=" background-color: #f1f1f1; padding:10px; border-radius:10px;"> <?php echo htmlentities($row['msg']);?> &nbsp;
                                                 <?php echo htmlentities($row['time']);?></span></p>
                                                 <?php 
                                             }
