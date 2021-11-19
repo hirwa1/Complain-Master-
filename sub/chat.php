@@ -71,7 +71,48 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 
 	<div class="module">
 							<div class="module-head">
-								<h3>Closed Complaints</h3>
+								<h3>Sub-Admin</h3>
+							</div>
+							<div class="module-body table">
+
+
+							
+                            <table cellpadding="0" cellspacing="0" border="0" class="datatable-1 table table-bordered table-striped	 display" width="100%">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th> Name</th>
+											<th>Email </th>
+											<th>Action</th>
+										
+										</tr>
+									</thead>
+									<tbody>
+
+<?php 
+$query=mysqli_query($con,"select * from admin");
+$cnt=1;
+
+while($row=mysqli_fetch_array($query))
+{
+?>									
+										<tr>
+											<td><?php echo htmlentities($cnt);?></td>
+											<td><?php echo htmlentities($row['cat']);?></td>
+											<td><?php echo htmlentities($row['name']);?></td>
+
+<td>
+<a href="chat2.php?uid=<?php echo htmlentities($row['id']);?>">
+<button type="button" class="btn btn-success">Message</button></a>
+
+										</td>
+											
+										<?php $cnt=$cnt+1; } ?>
+										
+								</table>
+							</div>
+                            <div class="module-head">
+								<h3>Admin</h3>
 							</div>
 							<div class="module-body table">
 
