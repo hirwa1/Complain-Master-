@@ -77,41 +77,36 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 
 
 							
-								<table cellpadding="0" cellspacing="0" border="0" class="datatable-1 table table-bordered table-striped	 display" >
+                            <table cellpadding="0" cellspacing="0" border="0" class="datatable-1 table table-bordered table-striped	 display" width="100%">
 									<thead>
 										<tr>
-											<th>Complaint No</th>
-											<th> complainant Name</th>
-											<th>Reg Date</th>
-											<th>Status</th>
-											
+											<th>#</th>
+											<th> Name</th>
+											<th>Email </th>
 											<th>Action</th>
-											
 										
 										</tr>
 									</thead>
-								
-<tbody>
-<?php 
-$st='closed';
-$thth = $_SESSION['state'];
-$query=mysqli_query($con,"select tblcomplaints.*,users.fullName as name from tblcomplaints join users on users.id=tblcomplaints.userId where tblcomplaints.status='$st' and tblcomplaints.state='$thth'");
+									<tbody>
+
+<?php $query=mysqli_query($con,"select * from sub");
+$cnt=1;
 while($row=mysqli_fetch_array($query))
 {
-?>										
+?>									
 										<tr>
-											<td><?php echo htmlentities($row['complaintNumber']);?></td>
+											<td><?php echo htmlentities($cnt);?></td>
+											<td><?php echo htmlentities($row['cat']);?></td>
 											<td><?php echo htmlentities($row['name']);?></td>
-											<td><?php echo htmlentities($row['regDate']);?></td>
-										
-											<td><button type="button" class="btn btn-success">Closed</button></td>
-											
-											<td>   <a href="complaint-details.php?cid=<?php echo htmlentities($row['complaintNumber']);?>"> View Details</a> 
-											</td>
-											</tr>
 
-										<?php  } ?>
-										</tbody>
+<td>
+<a href="chat2.php?uid=<?php echo htmlentities($row['id']);?>">
+<button type="button" class="btn btn-success">Message</button></a>
+
+										</td>
+											
+										<?php $cnt=$cnt+1; } ?>
+										
 								</table>
 							</div>
 						</div>						
