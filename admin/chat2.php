@@ -12,7 +12,7 @@ $currentTime = date( 'd-m-Y h:i:s A', time () );
 
 
 
-if(isset($_POST['submit']))
+if(isset($_POST['send']))
 {
 	$category=$_POST['category'];
 	$description=$_POST['description'];
