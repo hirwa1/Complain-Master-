@@ -13,7 +13,7 @@ if($num>0)
 $extra="change-password.php";//
 $extra="admin_dashboard.php";
 $_SESSION['alogin']=$_POST['username'];
-$_SESSION['id']=$num['id'];
+$_SESSION['id']=$num['keyx'];
 $host=$_SERVER['HTTP_HOST'];
 $uri=rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
 header("location:http://$host$uri/$extra");
