@@ -17,8 +17,8 @@ if(isset($_POST['send']))
 	$sender=$_SESSION['id'];
 	$rec=$_GET['uid'];
     $msg =$_POST['msg'];
-    $time =
-$sql=mysqli_query($con,"insert into category(categoryName,categoryDescription) values('$category','$description')");
+    $time = date("Y - m - d") . " " . date("h:i A");
+$sql=mysqli_query($con,"insert into chat(sender , receiver, msg , time) values('$sender','$rec' , '$msg' , '$time')");
 $_SESSION['msg']="Category Created !!";
 
 }
