@@ -113,10 +113,10 @@ while($row=mysqli_fetch_array($query))
 
 											
 										<?php  } ?>
-										
-								<form style="display:flex; justify-content: space-between; width:100%">
+										<br>
+								<form style="display:flex; justify-content: space-between; width:100%" method="post" action="">
                                     <input type="text" name="msg" required style="height:38px; width:89.5%;  border: 2px solid #f1f1f1; border-radius:10px;">
-                                    <input type="submit" name="submit" value="send" class="btn btn-sucess" style="width:10%; height:38px; border: 2px solid #f1f1f1; border-radius:10px;"> 
+                                    <input type="submit" name="send" value="send" class="btn btn-sucess" style="width:10%; height:38px; border: 2px solid #f1f1f1; border-radius:10px;"> 
                                         </form>
 							</div>
 						</div>						
