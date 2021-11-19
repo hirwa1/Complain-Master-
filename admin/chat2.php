@@ -96,15 +96,15 @@ while($row=mysqli_fetch_array($query))
                                             ?>
 
 
-											<p style=" background-color: #f1f1f1; padding:20px; border-radius:10px; ">
-                                            <span style="float:right;"><?php echo htmlentities($row['msg']);?> &nbsp;
+											<p style="  padding:20px;  ">
+                                            <span style="float:right; background-color: #f1f1f1; padding:10px;"><?php echo htmlentities($row['msg']);?> &nbsp;
 											<?php echo htmlentities($row['time']);?></span></p>
 
                                             <?php
                                             }
                                             else{
                                                 ?>
-                                             <p style=" background-color: black ; color: white; padding:10px; border-radius:10px;"> 
+                                             <p style="   padding:10px;"> 
                                               <span > <?php echo htmlentities($row['msg']);?> &nbsp;
                                                 <?php echo htmlentities($row['time']);?></span></p>
                                                 <?php 
@@ -114,9 +114,9 @@ while($row=mysqli_fetch_array($query))
 											
 										<?php  } ?>
 										
-								<form style="display:flex;">
-                                    <input type="text" name="msg" required style="height:35px;">
-                                    <input type="submit" name="submit" value="send" class="btn btn-sucess"> 
+								<form style="display:flex; justify-content: space-between; width:100%">
+                                    <input type="text" name="msg" required style="height:38px; width:89.5%;  border: 2px solid #f1f1f1; border-radius:10px;">
+                                    <input type="submit" name="submit" value="send" class="btn btn-sucess" style="width:10%; height:38px; border: 2px solid #f1f1f1; border-radius:10px;"> 
                                         </form>
 							</div>
 						</div>						
