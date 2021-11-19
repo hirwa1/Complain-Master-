@@ -79,17 +79,7 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 
 
 							
-								<table cellpadding="0" cellspacing="0" border="0" class="datatable-1 table table-bordered table-striped	 display" width="100%">
-									<thead>
-										<tr>
-											
-											<th>Message</th>
-											<th>Time</th>
-											
-										
-										</tr>
-									</thead>
-									<tbody>
+								
  <?php
  
   $userid=$_GET['uid'];
@@ -98,28 +88,31 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 while($row=mysqli_fetch_array($query))
 {
 ?>									
-										<tr>
+									
 											<?php
-                                            
-                                            if ($sender='$userid'){
+                                            $sender = $row['sender'];
+                                            if ($sender == $admin){
 
                                             ?>
 
 
-											<td><?php echo htmlentities($row['msg']);?></td>
-											<td><?php echo htmlentities($row['time']);?></td>
+											<p style=" background-color: #f1f1f1; padding:10px;"><?php echo htmlentities($row['msg']);?> &nbsp;
+											<?php echo htmlentities($row['time']);?></p>
 
                                             <?php
                                             }
                                             else{
-
+                                                ?>
+                                             <p style=" background-color: ; padding:10px;">   <?php echo htmlentities($row['msg']);?> &nbsp;
+                                                <?php echo htmlentities($row['time']);?></p>
+                                                <?php 
                                             }
                                             ?>
 
 											
 										<?php  } ?>
 										
-								</table>
+								
 							</div>
 						</div>						
 
