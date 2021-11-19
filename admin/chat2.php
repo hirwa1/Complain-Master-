@@ -82,7 +82,7 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 								<table cellpadding="0" cellspacing="0" border="0" class="datatable-1 table table-bordered table-striped	 display" width="100%">
 									<thead>
 										<tr>
-											<th>#</th>
+											
 											<th>Message</th>
 											<th>Time</th>
 											
@@ -94,18 +94,17 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
  
   $userid=$_GET['uid'];
   $query=mysqli_query($con,"select * from chat");
-$cnt=1;
 while($row=mysqli_fetch_array($query))
 {
 ?>									
 										<tr>
-											<td><?php echo htmlentities($cnt);?></td>
+											
 											<td><?php echo htmlentities($row['msg']);?></td>
 											<td><?php echo htmlentities($row['time']);?></td>
 
 
 											
-										<?php $cnt=$cnt+1; } ?>
+										<?php  } ?>
 										
 								</table>
 							</div>
