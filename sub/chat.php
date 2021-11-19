@@ -98,8 +98,8 @@ while($row=mysqli_fetch_array($query))
 ?>									
 										<tr>
 											<td><?php echo htmlentities($cnt);?></td>
-											<td><?php echo htmlentities($row['cat']);?></td>
 											<td><?php echo htmlentities($row['name']);?></td>
+											<td><?php echo htmlentities($row['email']);?></td>
 
 <td>
 <a href="chat2.php?uid=<?php echo htmlentities($row['id']);?>">
