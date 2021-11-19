@@ -74,7 +74,7 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 							<div class="module-head">
 								<h3>Chat With Sub-Admin</h3>
 							</div>
-							<div class="module-body table">
+							<div class="module-body" style=" padding: 20px;">
 
 
 
@@ -96,15 +96,16 @@ while($row=mysqli_fetch_array($query))
                                             ?>
 
 
-											<p style=" background-color: #f1f1f1; padding:10px;"><?php echo htmlentities($row['msg']);?> &nbsp;
+											<p style=" background-color: #f1f1f1; padding:10px; border-radius:10px;"><?php echo htmlentities($row['msg']);?> &nbsp;
 											<?php echo htmlentities($row['time']);?></p>
 
                                             <?php
                                             }
                                             else{
                                                 ?>
-                                             <p style=" background-color: ; padding:10px;">   <?php echo htmlentities($row['msg']);?> &nbsp;
-                                                <?php echo htmlentities($row['time']);?></p>
+                                             <p style=" background-color: black ; color: white; padding:10px; border-radius:10px; align-left;"> 
+                                              <span> <?php echo htmlentities($row['msg']);?> &nbsp;
+                                                <?php echo htmlentities($row['time']);?></span></p>
                                                 <?php 
                                             }
                                             ?>
