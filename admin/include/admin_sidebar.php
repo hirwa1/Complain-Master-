@@ -1,3 +1,8 @@
+<style> *{
+
+
+font-family: 'Poppins', sans-serif; }
+    </style>
 <aside>
           <div id="sidebar"  class="nav-collapse ">
               <!-- sidebar menu start-->

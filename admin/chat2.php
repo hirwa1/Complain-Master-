@@ -10,12 +10,7 @@ else{
 date_default_timezone_set('Asia/Kolkata');// change according timezone
 $currentTime = date( 'd-m-Y h:i:s A', time () );
 
-if(isset($_GET['uid']) && $_GET['action']=='del')
-{
-$userid=$_GET['uid'];
-$query=mysqli_query($con,"delete from users where id='$userid'");
-header('location:manage-users.php');
-}
+
 
 
 ?>
@@ -88,29 +83,27 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 									<thead>
 										<tr>
 											<th>#</th>
-											<th> Name</th>
-											<th>Email </th>
-											<th>Action</th>
+											<th>Message</th>
+											<th>Time</th>
+											
 										
 										</tr>
 									</thead>
 									<tbody>
-
-<?php $query=mysqli_query($con,"select * from sub");
+ <?php
+ 
+  $userid=$_GET['uid'];
+  $query=mysqli_query($con,"select * from chat");
 $cnt=1;
 while($row=mysqli_fetch_array($query))
 {
 ?>									
 										<tr>
 											<td><?php echo htmlentities($cnt);?></td>
-											<td><?php echo htmlentities($row['cat']);?></td>
-											<td><?php echo htmlentities($row['name']);?></td>
+											<td><?php echo htmlentities($row['msg']);?></td>
+											<td><?php echo htmlentities($row['time']);?></td>
 
-<td>
-<a href="chat2.php?uid=<?php echo htmlentities($row['id']);?>">
-<button type="button" class="btn btn-success">Message</button></a>
 
-										</td>
 											
 										<?php $cnt=$cnt+1; } ?>
 										
