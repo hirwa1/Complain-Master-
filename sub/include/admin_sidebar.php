@@ -24,6 +24,12 @@
 
                       <ul class="sub">
 
+                      <li><a href="chat.php">
+                      <i class="icon-tasks"></i>
+                     Chats
+                   
+                    </a>
+                  </li>
    <li><a href="notprocess-complaint.php">
                       <i class="icon-tasks"></i>
                       Unprocessed
