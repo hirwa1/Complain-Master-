@@ -89,9 +89,11 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 									</thead>
 									<tbody>
 
-<?php $query=mysqli_query($con,"select * from sub where id");
-$cnt=1;
+<?php 
 $id = $_SESSION['id'];
+$query=mysqli_query($con,"select * from sub where not id='$id'");
+$cnt=1;
+
 while($row=mysqli_fetch_array($query))
 {
 ?>									
