@@ -106,15 +106,21 @@ while($row=mysqli_fetch_array($query))
 
 
 											<p style="  padding:20px;  ">
-                                            <span style="float:right; background-color: #f1f1f1; padding:10px; border-radius:10px;"><?php echo htmlentities($row['msg']);?> &nbsp;
-											<?php echo htmlentities($row['time']);?></span></p>
+                                            <span style="float:right; background-color: #f1f1f1; padding:10px; border-radius:10px; max-width:80%;">
+                                            <?php echo htmlentities($row['msg']);?>
+                                             &nbsp;
+											<i>
+                                                <?php echo htmlentities($row['time']);?>
+                                            </i>
+                                        </span>
+                                    </p>
 
                                             <?php
                                             }
                                             else{
                                                 ?>
                                              <p style="   padding:10px;"> 
-                                              <span style=" background-color: #f1f1f1; padding:10px; border-radius:10px;"> <?php echo htmlentities($row['msg']);?> &nbsp;
+                                              <span style=" background-color: #f1f1f1; padding:10px; border-radius:10px; max-width:80%;"> <?php echo htmlentities($row['msg']);?> &nbsp;
                                                 <?php echo htmlentities($row['time']);?></span></p>
                                                 <?php 
                                             }
