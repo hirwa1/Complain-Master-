@@ -98,7 +98,9 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 									</thead>
 									<tbody>
 
-<?php $query=mysqli_query($con,"select * from users");
+<?php 
+$thth = $_SESSION['state'];
+ $query=mysqli_query($con,"select * from users where State='$thth'");
 $cnt=1;
 while($row=mysqli_fetch_array($query))
 {
