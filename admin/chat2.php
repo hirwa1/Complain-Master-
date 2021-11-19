@@ -114,7 +114,10 @@ while($row=mysqli_fetch_array($query))
 											
 										<?php  } ?>
 										
-								
+								<form>
+                                    <input type="text" name="msg" required style="height:35px;">
+                                    <input type="submit" name="submit" value="send" class="btn btn-sucess"> 
+                                        </form>
 							</div>
 						</div>						
 
