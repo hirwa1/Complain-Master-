@@ -9,8 +9,12 @@
                           <span>Dashboard</span>
                       </a>
                   </li>
-
-
+                  <li class="mt">
+                      <a href="admin_dashboard.php">
+                          <i class="fa fa-dashboard"></i>
+                          <span>Dashboard</span>
+                      </a>
+                  </li>
 
 
                   <li class="sub-menu">
@@ -24,12 +28,7 @@
 
                       <ul class="sub">
 
-                      <li><a href="chat.php">
-                      <i class="icon-tasks"></i>
-                     Chats
-                   
-                    </a>
-                  </li>
+                     
    <li><a href="notprocess-complaint.php">
                       <i class="icon-tasks"></i>
                       Unprocessed
