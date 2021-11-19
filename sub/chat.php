@@ -71,7 +71,7 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 
 	<div class="module">
 							<div class="module-head">
-								<h3>Sub-Admin</h3>
+								<h3>Admin</h3>
 							</div>
 							<div class="module-body table">
 
@@ -98,7 +98,7 @@ while($row=mysqli_fetch_array($query))
 ?>									
 										<tr>
 											<td><?php echo htmlentities($cnt);?></td>
-											<td><?php echo htmlentities($row['name']);?></td>
+											<td><?php echo htmlentities($row['Name']);?></td>
 											<td><?php echo htmlentities($row['email']);?></td>
 
 <td>
@@ -112,7 +112,7 @@ while($row=mysqli_fetch_array($query))
 								</table>
 							</div>
                             <div class="module-head">
-								<h3>Admin</h3>
+								<h3>Sub Admin</h3>
 							</div>
 							<div class="module-body table">
 
