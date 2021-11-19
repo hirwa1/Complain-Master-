@@ -10,9 +10,9 @@
                       </a>
                   </li>
                   <li class="mt">
-                      <a href="admin_dashboard.php">
+                      <a href="chat.php">
                           <i class="fa fa-dashboard"></i>
-                          <span>Dashboard</span>
+                          <span>Chats</span>
                       </a>
                   </li>
 
