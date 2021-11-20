@@ -63,10 +63,10 @@ exit();
 
 
 
-    <div class="wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="module module-login span4 offset4" style="background-color: green;">
+    <div class="wrapper" style="background: url('img/back.jpg'); background-position: fixed; width:100%; mix-height:80%;">
+        <div class="container" >
+            <div class="row" >
+                <div class="module module-login span4 offset4" style="border-radius:5px;">
                     <form class="form-vertical" method="post" >
                         <div class="module-head">
                             <h3>Sign In -  Umurenge</h3>
