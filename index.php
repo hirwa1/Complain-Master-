@@ -47,14 +47,14 @@ exit();
 </head>
 <body>
 
-    <div class="navbar navbar-fixed-top" style="background-color:black;">
-        <div class="navbar-inner">
-            <div class="container">
+    <div class="navbar navbar-fixed-top" >
+        <div class="navbar-inner" style="background-color:black;" >
+            <div class="container" >
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
                     <i class="icon-reorder shaded"></i>
                 </a>
 
-                <a class="brand" href="#">
+                <a class="brand" href="#" style="color: white;">
                     Compaint Management System | Admin
                 </a>
 
