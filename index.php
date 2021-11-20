@@ -48,7 +48,8 @@ exit();
 <body>
 
     <div class="navbar navbar-fixed-top" >
-        <div class="navbar-inner" style="background-color:black; " ><center>
+        <div class="navbar-inner" style="background-color:black; " >
+        <center>
             <div class="container" >
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
                     <i class="icon-reorder shaded"></i>
@@ -65,13 +66,13 @@ exit();
 
 
 
-    <div class="wrapper" style="">
+    <div class="wrapper" style="min-height:80%;">
         <div class="container" >
             <div class="row" >
                 <div class="module module-login span4 offset4" style="border-radius:5px;">
                     <form class="form-vertical" method="post" >
                         <div class="module-head">
-                            <h3>Sign In -  Umurenge</h3>
+                            <h3>Sign In -  Admin</h3>
                         </div>
                         <span style="color:red;" ><?php echo htmlentities($_SESSION['errmsg']); ?><?php echo htmlentities($_SESSION['errmsg']="");?></span>
                         <div class="module-body">
@@ -89,7 +90,7 @@ exit();
                         <div class="module-foot">
                             <div class="control-group">
                                 <div class="controls clearfix">
-                                    <button type="submit" class="btn btn-primary pull-right" name="submit">Login</button>
+                                    <button type="submit" class="btn btn-primary pull-right" style="width:100%" name="submit">Login</button>
                                     
                                 </div>
                             </div>
