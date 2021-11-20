@@ -51,12 +51,12 @@ exit();
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
                     <i class="icon-reorder shaded"></i>
                 </a>
-<center>
+
                 <a class="brand" href="#">
                     Compaint Management System | Admin
                 </a>
 
-</center>
+
             </div>
         </div>
     </div>
