@@ -63,7 +63,7 @@ exit();
 
 
 
-    <div class="wrapper" style="background: url('img/back.jpg'); background-position: fixed; width:100%; max-height:80%;">
+    <div class="wrapper" style="">
         <div class="container" >
             <div class="row" >
                 <div class="module module-login span4 offset4" style="border-radius:5px;">
