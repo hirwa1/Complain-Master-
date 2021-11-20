@@ -41,11 +41,13 @@ exit();
     <link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link type="text/css" href="css/theme.css" rel="stylesheet">
     <link type="text/css" href="images/icons/css/font-awesome.css" rel="stylesheet">
-    <link type="text/css" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet'>
+<style>
+  * { font-family: 'Poppins', sans-serif;}
+</style>    
 </head>
 <body>
 
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar navbar-fixed-top" style="background-color:black;">
         <div class="navbar-inner">
             <div class="container">
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
@@ -98,7 +100,7 @@ exit();
                 </div>
             
             </div>
-            <h2><a href="users" class=" btn btn-success">Citizen</a> &nbsp; <a href="sub" class="btn btn-success">Akagari</a></h2>
+           <center> <h2><a href="users" class=" btn btn-success">Citizen</a> &nbsp; <a href="sub" class="btn btn-success">Akagari</a></h2></center>
         </div>
     </div><!--/.wrapper-->
     <!-- -->
