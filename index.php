@@ -56,20 +56,7 @@ exit();
                     Compaint Management System | Admin
                 </a>
 
-                <div class="nav-collapse collapse navbar-inverse-collapse">
-                
-                    <ul class="nav pull-right">
-
-                        <li><a href="../">
-                        Back to Portal
-                        
-                        </a></li>
-
-                        
-
-                        
-                    </ul>
-                </div>
+               
             </div>
         </div>
     </div>
@@ -80,7 +67,7 @@ exit();
         <div class="container">
             <div class="row">
                 <div class="module module-login span4 offset4">
-                    <form class="form-vertical" method="post">
+                    <form class="form-vertical" method="post" style="backgroubd-color: green;">
                         <div class="module-head">
                             <h3>Sign In -  Umurenge</h3>
                         </div>
@@ -111,7 +98,7 @@ exit();
                 </div>
             
             </div>
-            <h2><a href="users">Citizen</a> &nbsp; <a href="sub">Akagari</a></h2>
+            <h2><a href="users" class=" btn btn-success">Citizen</a> &nbsp; <a href="sub" class="btn btn-success">Akagari</a></h2>
         </div>
     </div><!--/.wrapper-->
     <!-- -->
