@@ -66,8 +66,8 @@ exit();
     <div class="wrapper">
         <div class="container">
             <div class="row">
-                <div class="module module-login span4 offset4">
-                    <form class="form-vertical" method="post" style="background-color: green;">
+                <div class="module module-login span4 offset4" style="background-color: green;">
+                    <form class="form-vertical" method="post" >
                         <div class="module-head">
                             <h3>Sign In -  Umurenge</h3>
                         </div>
